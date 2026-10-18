@@ -83,10 +83,6 @@ class VeiledDuel:
             effect_witness=None,
         )
 
-    def step(self, identity: ActionIdentity) -> TransitionReceipt:
-        """One environment-authoritative step; identical to dispatch_action."""
-        return self.dispatch_action(identity)
-
     def dispatch_action(self, identity: ActionIdentity) -> TransitionReceipt:
         """Mutate only after a fresh identity and authoritative legality check.
 
