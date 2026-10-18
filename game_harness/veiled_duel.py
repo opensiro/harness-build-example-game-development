@@ -153,7 +153,3 @@ class VeiledDuel:
             after=self.observe(),
             effect_witness=witness,
         )
-
-    def step(self, identity: ActionIdentity) -> TransitionReceipt:
-        """One authoritative environment transition; same gate as dispatch_action."""
-        return self.dispatch_action(identity)
