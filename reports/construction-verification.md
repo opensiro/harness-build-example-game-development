@@ -36,7 +36,7 @@ Allowed checks performed after constructing the source:
 
 1. [`tools/check_source_only.py`](../tools/check_source_only.py): AST parse all Python game-harness modules, source SHA256, required data/protocol/method presence, duplicate method guard, no direct runtime Cognee or model dependencies. Does **not** import the game.
 2. [`tools/verify_construction_source.py`](../tools/verify_construction_source.py): source AST parse and compilation without execution, allowed module-import surface, original compressed connector-log SHA256, C2 import/audit/manifests and all eight original native receipts, canonical identity matching, ancestry among C1/C2/C3/C4-first commits. Does **not** call the game runtime.
-3. Output retained under `receipts/verification/static-check.json`, `receipts/verification/evidence-check.log`, and `receipts/verification/source-sha256.txt`. The checker itself is a **source-only** tool, not a gameplay test.
+3. Output retained under `receipts/verification/static-check.json`, `receipts/verification/provenance-check.log`, and `receipts/verification/game-harness-source-sha256.txt`. The checker itself is a **source-only** tool, not a gameplay test.
 
 The source/AST checker reported `PASS_STATIC_AST_ONLY`; evidence checker reported `NATIVE_RECEIPT_OK Q01`–`Q08`, `PROVENANCE_STATIC_OK included=581 chunks=3486 native_queries=8`, four ancestry `CHRONOLOGY_OK` confirmations, and `STATIC_CHECKED: source/evidence/chronology only; GAMEPLAY NOT_RUN`.
 
