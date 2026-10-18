@@ -149,3 +149,7 @@ class VeiledDuel:
             after=self.observe(),
             effect_witness=witness,
         )
+
+    def step(self, identity: ActionIdentity) -> TransitionReceipt:
+        """One authoritative transition; dispatch enforces identity and legality."""
+        return self.dispatch_action(identity)
