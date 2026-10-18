@@ -1,0 +1,39 @@
+{
+  "schema": "opensiro-game-c4-fresh-clone-static-review/v1",
+  "checked_at_utc": "2026-10-18T21:47:08Z",
+  "repository": "https://github.com/opensiro/harness-build-example-game-development",
+  "branch": "experiment/game-cognee-first-20261018",
+  "pinned_checkout": "de0df265e9ae813465762270518ea0e898793cef",
+  "mode": "fresh single-branch public git clone; independent read-only source and provenance verification",
+  "environment": "Linux CPU-VM / Python 3.12; isolated new review checkout; no preexisting game package runtime import",
+  "checks": [
+    {
+      "command": "python3 tools/check_source_only.py",
+      "status": "PASS_STATIC_AST_ONLY",
+      "checked_game_source_files": 6
+    },
+    {
+      "command": "python3 tools/verify_construction_source.py",
+      "status": "PASS_STATIC_SOURCE_AND_PROVENANCE",
+      "scope": "581 pinned included sources, 8 immutable native receipts, Git C1-C4 ancestry"
+    },
+    {
+      "command": "sha256sum -c receipts/verification/game-harness-source-sha256.txt",
+      "status": "PASS",
+      "files": 6
+    },
+    {
+      "command": "parse traces/decision-trace.jsonl",
+      "status": "PASS",
+      "events": 9,
+      "unique_event_ids": 9
+    }
+  ],
+  "runtime_status": "NOT_RUN",
+  "evaluation_level": "NOT_RUN",
+  "model_inference": "NOT_RUN",
+  "limitations": [
+    "This verifies reproducibility of source/receipts from a clean checkout, not native re-ingestion or live agent operation",
+    "No gameplay, model, benchmark, unit tests or CI triggered"
+  ]
+}
