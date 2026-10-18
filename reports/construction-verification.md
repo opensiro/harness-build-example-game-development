@@ -40,6 +40,8 @@ Allowed checks performed after constructing the source:
 
 The source/AST checker reported `PASS_STATIC_AST_ONLY`; evidence checker reported `NATIVE_RECEIPT_OK Q01`–`Q08`, `PROVENANCE_STATIC_OK included=581 chunks=3486 native_queries=8`, four ancestry `CHRONOLOGY_OK` confirmations, and `STATIC_CHECKED: source/evidence/chronology only; GAMEPLAY NOT_RUN`.
 
+**Original first-attempt fence recovered and preserved after C2:** [`connector-attempt-marker-original.json`](../receipts/discovery/connector-attempt-marker-original.json) is a byte-for-byte copy (SHA256 `3622565117d36ce563163ce41f39a6c04d6a73145e3227d1b0dff90649dd3302`) of the OpenSiro connector's pre-write marker. Independent static recomputation of its `selected_sha256` using the 581 sorted canonical IDs from the full pinned manifest **matched**; its dataset-hashed original filename and Index commit also matched. Marker state was `CLAIMED_NEVER_REUSABLE`. This substantiates the original single-host fresh-attempt claim, **not** arbitrary crash/power-loss or distributed consistency. The marker is published later as original source bytes; it was not invented or backdated as C2 evidence.
+
 ### Explicit limits
 
 - The **581 full source Markdown documents** were imported into a fresh Cognee dataset, but native lexical retrieval was limited to the **six S1–S5 function sections** per assessment (3,486 chunks), **not full-body retrieval**; native Q08 deliberately returned irrelevant hits.
