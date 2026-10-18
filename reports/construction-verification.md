@@ -43,6 +43,7 @@ The source/AST checker reported `PASS_STATIC_AST_ONLY`; evidence checker reporte
 ### Explicit limits
 
 - The **581 full source Markdown documents** were imported into a fresh Cognee dataset, but native lexical retrieval was limited to the **six S1–S5 function sections** per assessment (3,486 chunks), **not full-body retrieval**; native Q08 deliberately returned irrelevant hits.
+- **Late source-content inconsistency observed, not retroactively repaired:** the pinned Continual Harness assessment's frontmatter has `status: included` and canonical catalog membership (which govern connector admission), while its final narrative sentence still says `status: proposed`. Its full Markdown was read and compared as a **canonically included** record; this stale prose was not used to claim an admission transition or influence OPT-A selection.
 - No source-free speculation about other harnesses and no performance inference from VSM autonomy labels. `discovery_contribution=DIRECT` is limited to the **observed first architectural lead**, not comparative Cognee superiority.
 - **No game episodes were run.** The Python package was *not imported or instantiated for gameplay verification*. No runtime harness tests, model inference, win-rate benchmark, gameplay CI or actual agent evaluation occurred.
 - Original toy-game rules/termination logic and the JSONL external-policy bridge are **inspectable and syntactically checked, not behaviorally proven**. Dynamic defects may remain.
