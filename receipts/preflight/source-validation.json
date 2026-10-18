@@ -1,0 +1,25 @@
+{
+  "recorded_at_utc": "2026-10-18T21:03:30Z",
+  "stage": "C1-postcommit-preimport",
+  "source_pin": "b48b13e74d6938f833094d3f9afc1a11e61a8515",
+  "connector_pin": "d176484e85da55c84450d67040cb4a2d096353c7",
+  "patch_sha256": "5be20dfacb2f8d48608b2aa4b9d4fbc6a43050e1f799678e8770ecb48a00b070",
+  "patch_path": "receipts/preflight/connector-shard-compat.patch",
+  "validation_status": "PASS_SOURCE_VALIDATION",
+  "accepted": 581,
+  "excluded": 48,
+  "proposed": 14,
+  "catalog": 629,
+  "unquoted_question_files": 68,
+  "literal_grades": {
+    "?": 141,
+    "A": 996,
+    "A(P)": 50,
+    "C": 261,
+    "C(P)": 42,
+    "P": 80,
+    "—": 1916
+  },
+  "scope_note": "Source-only connector validate (not a Cognee import or graph audit); original validation values independently observed against pinned Git tree",
+  "runtime": "Python 3.12.3, already installed Cognee SDK 1.6.4; fresh dataset not created yet"
+}
