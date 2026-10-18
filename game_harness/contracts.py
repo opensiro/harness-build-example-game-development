@@ -76,6 +76,10 @@ class DecisionSource(Protocol):
 class EnvironmentPort(Protocol):
     """Authoritative game boundary. No policy has direct mutation authority."""
 
+    def reset(self) -> Observation:
+        """Start a fresh episode; return its initial public observation."""
+        ...
+
     def observe(self) -> Observation:
         ...
 
@@ -83,4 +87,8 @@ class EnvironmentPort(Protocol):
         ...
 
     def dispatch_action(self, identity: ActionIdentity) -> TransitionReceipt:
+        ...
+
+    def step(self, identity: ActionIdentity) -> TransitionReceipt:
+        """Synonym for one authoritative step/dispatch; not a model call."""
         ...
