@@ -62,24 +62,29 @@ mkdir "$RUN_DIR/receipts"
   --repo "$RUN_DIR/index" \
   --commit b48b13e74d6938f833094d3f9afc1a11e61a8515
 
+# Use a genuinely new dataset ID for every new run and retry.
+ATTEMPT_ID="unique-attempt-identifier"
+DATASET_ID="game-cognee-$ATTEMPT_ID"
+STORE_DIR="store-$ATTEMPT_ID"
+
 # Actual connector ingestion, not direct SDK-only ingestion:
 "$RUN_DIR/sdk/bin/python" "$RUN_DIR/connector/packages/connector/opensiro-vsm/examples/example.py" \
   --repo "$RUN_DIR/index" \
   --commit b48b13e74d6938f833094d3f9afc1a11e61a8515 \
-  --store-root "$RUN_DIR/fresh-store-01" \
-  --dataset game-cognee-b3345272-full-01 \
+  --store-root "$RUN_DIR/$STORE_DIR" \
+  --dataset "$DATASET_ID" \
   --all --lexical \
   > "$RUN_DIR/receipts/connector-import-original.log" 2>&1
 
-# Separate process; audit must PASS before searching:
+# Separate process; independent audit must PASS before searching:
 "$RUN_DIR/sdk/bin/python" "$RESEARCH_REPO/tools/c2_native_receipts.py" \
-  audit --root "$RUN_DIR"
+  audit --root "$RUN_DIR" --dataset "$DATASET_ID" --store-dir "$STORE_DIR"
 
 "$RUN_DIR/sdk/bin/python" "$RESEARCH_REPO/tools/c2_native_receipts.py" \
-  search --root "$RUN_DIR"
+  search --root "$RUN_DIR" --dataset "$DATASET_ID" --store-dir "$STORE_DIR"
 ```
 
-The helper's dataset name and `fresh-store-01` directory are currently fixed to their **original-run values**. This is safe only because `RUN_DIR` is a genuinely new isolated store. A retry must use a new `RUN_DIR`; when adapting the helper to a different dataset identity, record that configuration delta with the new run.
+The helper defaults to the original historical dataset name only when flags are omitted; in reproductions, always specify the unique `--dataset` and `--store-dir` flags above. Never reuse a partially written attempt or delete its marker; publish a new attempt ID and retain its error log. The original C2 raw receipts remain immutable and are not overwritten by a reproduction.
 
 **Important:** the original host reused a preinstalled compatible Cognee SDK to avoid downloading dependencies. The clean `pip install -e` path above describes a dependency-resolution route, **not a claim that this clean installation was executed during the original experiment**. If it fails, report a packaging/environment blocker, not a connector import result.
 
