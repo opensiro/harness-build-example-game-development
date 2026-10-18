@@ -35,11 +35,13 @@ BANNED_IMPORT_PREFIXES = {
 
 
 def function_names(node: ast.ClassDef) -> set[str]:
-    return {
+    names = [
         part.name
         for part in node.body
         if isinstance(part, (ast.FunctionDef, ast.AsyncFunctionDef))
-    }
+    ]
+    assert len(names) == len(set(names)), f"Duplicate method declaration: {node.name}"
+    return set(names)
 
 
 def class_members(tree: ast.AST, name: str) -> set[str]:
