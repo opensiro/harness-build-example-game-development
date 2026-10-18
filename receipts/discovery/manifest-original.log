@@ -1,0 +1,19 @@
+{
+  "status": "PASS_SOURCE_VALIDATION",
+  "commit": "b48b13e74d6938f833094d3f9afc1a11e61a8515",
+  "accepted": 581,
+  "excluded": 48,
+  "proposed": 14,
+  "catalog": 629,
+  "unquoted_question_files": 68,
+  "literal_grades": {
+    "?": 141,
+    "A": 996,
+    "A(P)": 50,
+    "C": 261,
+    "C(P)": 42,
+    "P": 80,
+    "—": 1916
+  },
+  "manifest_output": "/dev/shm/opensiro-game-cognee-b3345272/receipts/pinned-source-manifest.json"
+}
