@@ -63,7 +63,7 @@ mkdir "$RUN_DIR/receipts"
   --commit b48b13e74d6938f833094d3f9afc1a11e61a8515
 
 # Use a genuinely new dataset ID for every new run and retry.
-ATTEMPT_ID="unique-attempt-identifier"
+ATTEMPT_ID="$(python3 -c 'import uuid; print(uuid.uuid4().hex)')"
 DATASET_ID="game-cognee-$ATTEMPT_ID"
 STORE_DIR="store-$ATTEMPT_ID"
 
