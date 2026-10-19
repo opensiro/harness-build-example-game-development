@@ -1,0 +1,26 @@
+{
+  "run_id": "game-iter2-20261019",
+  "stage": "source_validation_before_import",
+  "index_sha": "5cbb1035538b8f80fa3362f1c99652f4fd7c55e8",
+  "connector_sha": "d176484e85da55c84450d67040cb4a2d096353c7",
+  "connector_patch_sha256": "8718a48443e471ac14d45459af2718b87b986b6a8e523a44573368741644a9ae",
+  "patch_path": "iteration-2/receipts/preflight/connector-source-path.patch",
+  "validator": "python3 -m cognee_community_connector_opensiro_vsm validate --repo <pinned-index> --commit <pinned-sha>",
+  "status": "PASS_SOURCE_VALIDATION",
+  "accepted": 583,
+  "excluded": 48,
+  "proposed": 12,
+  "catalog": 631,
+  "unquoted_question_files": 67,
+  "literal_grades": {
+    "?": 141,
+    "A": 998,
+    "A(P)": 50,
+    "C": 261,
+    "C(P)": 42,
+    "P": 80,
+    "—": 1926
+  },
+  "c1_sha": "dc57a1a80a1db4f31e2a215513419e960416fb8e",
+  "limitation": "No Cognee import/index/query or independent Cognee audit has run."
+}
