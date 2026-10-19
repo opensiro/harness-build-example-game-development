@@ -1,0 +1,34 @@
+{
+  "baseline_commit": "3a93532d70b6dccad2d5e83a7a0e6532456fff6b",
+  "evaluation_level": "NOT_RUN",
+  "limitations": [
+    "No module imported or executed",
+    "No game, model API, JSONL transport, or runtime tests executed",
+    "AST/text checks are not proof of runtime correctness",
+    "No generic wall-clock timeout for external TextIO source"
+  ],
+  "modules_parsed": [
+    "game_harness/__init__.py",
+    "game_harness/__main__.py",
+    "game_harness/agent_context.py",
+    "game_harness/contracts.py",
+    "game_harness/policy_jsonl.py",
+    "game_harness/runner.py",
+    "game_harness/veiled_duel.py"
+  ],
+  "runtime_status": "NOT_RUN",
+  "scope": "AST parse; source ordering heuristics; baseline Git-bytes/provenance check",
+  "source_sha256": {
+    "game_harness/__init__.py": "b0f8e35ad50401be0b6cd43feeae621c7864bbc26054cfb858fa12ac7314bb51",
+    "game_harness/__main__.py": "59d228c0eedd9c68e2df66c5102a2cefdc3dd9f71dbce8047776027c81e97e20",
+    "game_harness/agent_context.py": "a4feea39014684db4c7460ce0ef1cace6dd09560981cbfda4c5fc3b0f43e8b1c",
+    "game_harness/contracts.py": "9d17f1bfff3fd09f917dc3906760c8a7a0eceb22fc07eb431e74326caac57956",
+    "game_harness/policy_jsonl.py": "386db6c84d598497072afb9272352c3b36b6a05beb7174b470b8d605fa567744",
+    "game_harness/runner.py": "b32c748059871a4992da7cba148604b96d61657dee9bb00b5c78611d319b9306",
+    "game_harness/veiled_duel.py": "3b0c11cee1c55f94cec0c8b125d51bfaad26cfd5db499b64cd5258b549ea2135"
+  },
+  "status": "PASS_SOURCE_STATIC",
+  "verification_level": "STATIC_CHECKED",
+  "checked_commit": "0889d6f4e063775171550073aeb0c8a56838859f",
+  "method": "Executed python3 iteration-2/tools/check_static.py in separate pinned source-only checkout"
+}

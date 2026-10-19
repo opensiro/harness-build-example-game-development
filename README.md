@@ -77,3 +77,14 @@ See [limitations](reports/construction-verification.md). The canonical VSM funct
 - Canonical bootstrap: [START_HERE.md](https://github.com/opensiro/vsm-oss-organization/blob/main/START_HERE.md) → [ECOSYSTEM.md](https://github.com/opensiro/vsm-oss-organization/blob/main/docs/ECOSYSTEM.md).
 - Governing experimental skill: [`build-harness-cognee-first v0.1.0` as merged in Skills PR #52](https://github.com/opensiro/vsm-harness-skills/commit/5d36fd2e40e4e8a1711b1f315f7a60a9a78a2a25).
 - Newly authored repository source is under [MIT](LICENSE); code from inspected upstream repositories was **not copied**. Source licenses and study references remain attributed in the [candidate comparison](reports/candidate-comparison.md).
+
+
+---
+
+## Iteration 2 — prospective context-aware agent extension (2026-10-19)
+
+The original Iteration 1 evidence and receipts above remain unchanged. A separate, chronologically published **second iteration** extends the same Veiled Duel source with an episode-private history of *verified* public feedback, optional external policy subgoal/strategy fields, bounded context, and fail-closed malformed-policy handling. This is a **source-only construction** experiment, not game evaluation.
+
+Follow the separate [Iteration 2 C1–C4 construction report](iteration-2/reports/C4-construction-verification.md), [independent Cognee discovery](iteration-2/reports/C2-discovery.md), [architecture comparison and ADR](iteration-2/reports/C3-architecture-decision.md), [implementation trace](iteration-2/reports/source-to-code.md) and [external AI JSONL interface](iteration-2/docs/INTERFACES.md). The fresh retrieval indexed S1–S5 sections only; see the [C2 receipt reconciliation](iteration-2/reports/C2-reconciliation.md).
+
+**Iteration 2:** `process_status=PASS`, `build_status=PASS` (inspectable source), `verification_level=STATIC_CHECKED`; `runtime_status=NOT_RUN`, `evaluation_level=NOT_RUN`, `model_quality_claim=NOT_EVALUATED`. Neither iteration establishes model/game performance.
