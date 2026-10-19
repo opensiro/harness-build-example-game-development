@@ -1,0 +1,56 @@
+{
+  "recorded_at_utc": "2026-10-19T14:06:06.169235+00:00",
+  "dataset": "game-iter2-b5c73a233c13455986e10f86689e5dbc",
+  "queries": [
+    {
+      "query_id": "I2-Q01",
+      "query": "game agent observation feedback action history context",
+      "path": "native-search-I2-Q01.json",
+      "bytes": 74550
+    },
+    {
+      "query_id": "I2-Q02",
+      "query": "persistent agent memory episodic state decisions",
+      "path": "native-search-I2-Q02.json",
+      "bytes": 82640
+    },
+    {
+      "query_id": "I2-Q03",
+      "query": "multi step planning goals strategy replanning",
+      "path": "native-search-I2-Q03.json",
+      "bytes": 69979
+    },
+    {
+      "query_id": "I2-Q04",
+      "query": "decision source failure timeout retry budget",
+      "path": "native-search-I2-Q04.json",
+      "bytes": 85298
+    },
+    {
+      "query_id": "I2-Q05",
+      "query": "agent controller environment tools feedback execution",
+      "path": "native-search-I2-Q05.json",
+      "bytes": 80487
+    },
+    {
+      "query_id": "I2-Q06",
+      "query": "context compaction history summarization observation",
+      "path": "native-search-I2-Q06.json",
+      "bytes": 73149
+    },
+    {
+      "query_id": "I2-Q07",
+      "query": "sequential partial observability prior outcomes planning",
+      "path": "native-search-I2-Q07.json",
+      "bytes": 78719
+    },
+    {
+      "query_id": "I2-Q08",
+      "query": "photosynthetic jellyfish volcanic granite astronomy",
+      "path": "native-search-I2-Q08.json",
+      "bytes": 84235
+    }
+  ],
+  "mode": "CHUNKS_LEXICAL",
+  "scope": "six function sections"
+}
