@@ -1,0 +1,56 @@
+{
+  "recorded_at_utc": "2026-10-18T21:12:07.218468+00:00",
+  "dataset": "game-cognee-b3345272-full-01",
+  "queries": [
+    {
+      "query_id": "Q01",
+      "query": "game environment observation action feedback",
+      "path": "native-search-Q01.json",
+      "bytes": 49139
+    },
+    {
+      "query_id": "Q02",
+      "query": "partial observability state observation belief",
+      "path": "native-search-Q02.json",
+      "bytes": 59078
+    },
+    {
+      "query_id": "Q03",
+      "query": "sequential decisions multi step agent tasks",
+      "path": "native-search-Q03.json",
+      "bytes": 56147
+    },
+    {
+      "query_id": "Q04",
+      "query": "long horizon planning memory game",
+      "path": "native-search-Q04.json",
+      "bytes": 54616
+    },
+    {
+      "query_id": "Q05",
+      "query": "environment feedback retries recovery",
+      "path": "native-search-Q05.json",
+      "bytes": 59835
+    },
+    {
+      "query_id": "Q06",
+      "query": "tool action execution safety validation",
+      "path": "native-search-Q06.json",
+      "bytes": 58696
+    },
+    {
+      "query_id": "Q07",
+      "query": "agent state persistence context across steps",
+      "path": "native-search-Q07.json",
+      "bytes": 57247
+    },
+    {
+      "query_id": "Q08",
+      "query": "chlorophyll photosynthesis tectonic plates",
+      "path": "native-search-Q08.json",
+      "bytes": 66464
+    }
+  ],
+  "mode": "CHUNKS_LEXICAL",
+  "scope": "six function sections"
+}

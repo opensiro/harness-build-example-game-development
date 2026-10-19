@@ -1,0 +1,22 @@
+{
+  "status": "PASS_FRESH_LOCAL_COGNEE_IMPORT",
+  "dataset": "game-cognee-b3345272-full-01",
+  "index_commit": "b48b13e74d6938f833094d3f9afc1a11e61a8515",
+  "documents": 581,
+  "graph_nodes": 12161,
+  "graph_edges": 8094,
+  "source_scoped_nodes": 12161,
+  "node_type_counts": {
+    "VSMHarness": 581,
+    "VSMAssessment": 581,
+    "VSMFunction": 3486,
+    "DocumentChunk": 3486,
+    "TextDocument": 3486,
+    "VSMEvidence": 541
+  },
+  "graded_facts": 3486,
+  "all_states_exact": true,
+  "sdk_result": "PipelineRunCompleted",
+  "elapsed_s": 242.604,
+  "limitations": "Fresh-only graph_only smoke. No updates, interrupted rollback, embeddings or GPU."
+}
