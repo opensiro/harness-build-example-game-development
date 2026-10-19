@@ -1,0 +1,89 @@
+{
+  "schema": "opensiro-game-iteration-2-native-receipt-hashes/v1",
+  "experiment_id": "game-iter2-20261019",
+  "dataset": "game-iter2-b5c73a233c13455986e10f86689e5dbc",
+  "index_commit": "5cbb1035538b8f80fa3362f1c99652f4fd7c55e8",
+  "connector_commit": "d176484e85da55c84450d67040cb4a2d096353c7",
+  "connector_patch_sha256": "8718a48443e471ac14d45459af2718b87b986b6a8e523a44573368741644a9ae",
+  "search_method": "cognee.search SearchType.CHUNKS_LEXICAL top_k=20",
+  "scope": "3,498 S1-S5 function section chunks; not full-body lexical or semantic search",
+  "published_full_raw_json": false,
+  "warning": "Actual full native query output remains in original isolated workspace receipts; SHA hashes do not substitute for Git-anchored full raw receipts. Therefore C2 publication gate is incomplete.",
+  "query_receipts": [
+    {
+      "id": "I2-Q01",
+      "hits": 20,
+      "bytes": 74550,
+      "sha256": "624963ea675f55239b4ec482eb0af4da6cf5f99b8aa0517f4cca5e71403d8e74"
+    },
+    {
+      "id": "I2-Q02",
+      "hits": 20,
+      "bytes": 82640,
+      "sha256": "7a7a9389b2a7a418e7b9e787a6f9a065578a4a5c8036c2ef753abc78f8d1d583"
+    },
+    {
+      "id": "I2-Q03",
+      "hits": 20,
+      "bytes": 69979,
+      "sha256": "f2d306f63b5b1b9f1953effc386c19e152571e48bebcc4d60e258e462b71b0cf"
+    },
+    {
+      "id": "I2-Q04",
+      "hits": 20,
+      "bytes": 85298,
+      "sha256": "bdcd00df56f9fae498a3e61876c4bf9ba4271c8de32c0e2355094ad1be8ea4ba"
+    },
+    {
+      "id": "I2-Q05",
+      "hits": 20,
+      "bytes": 80487,
+      "sha256": "cbb1973179093035237a63c0b404bb8307cd7eb1f18d683d7130f15d708b8bd3"
+    },
+    {
+      "id": "I2-Q06",
+      "hits": 20,
+      "bytes": 73149,
+      "sha256": "ddba7ca443664dee802cc0832e5aa7658373629b98e8410ba3363ac721597d0f"
+    },
+    {
+      "id": "I2-Q07",
+      "hits": 20,
+      "bytes": 78719,
+      "sha256": "49bb960d7ebc168530191e5b625ace4792ca4d33dd374f385d020f316a1026ab"
+    },
+    {
+      "id": "I2-Q08",
+      "hits": 20,
+      "bytes": 84235,
+      "sha256": "b4404f9561510991468477600861d023f15d221c47ebcec330e2263dbd247177",
+      "negative_control": true,
+      "negative_result": "20 irrelevant lexical chunks; not evidence of semantic matching"
+    }
+  ],
+  "other_receipts": [
+    {
+      "name": "connector-import-original.log",
+      "bytes": 4522318,
+      "sha256": "d2e14572693898025e1d75aa09815b94d98eb4d3c191783604d832600e1f9e21",
+      "git_published": false
+    },
+    {
+      "name": "independent-audit.json",
+      "sha256_original_pre_minification": "d5deb505c440164d24e0cacbfa2d5a875035e70d6d207d14b23f15ed4bfcded2",
+      "git_published": true,
+      "git_content_format": "compact JSON equivalent"
+    },
+    {
+      "name": "native-search-process-original.log",
+      "sha256": "8dbea41eeaae3f0ca0cae564a6329d828706306b4659ebbef2a3e3726e49c57d",
+      "git_published": false
+    },
+    {
+      "name": "native-search-manifest.json",
+      "sha256_original": "d2c7d80ee29488236628ca3bbf5c7277d1c2530f0b2f72c816a415281f14002b",
+      "git_published": true,
+      "git_content_format": "original JSON"
+    }
+  ]
+}
